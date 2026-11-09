@@ -65,12 +65,24 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.daiwenheng.novelreader.tests
         GENERATE_INFOPLIST_FILE: YES
+  NovelReaderUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: NovelReaderUITests
+    dependencies:
+      - target: NovelReader
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.daiwenheng.novelreader.uitests
+        GENERATE_INFOPLIST_FILE: YES
 schemes:
   NovelReader:
     build:
       targets:
         NovelReader: all
         NovelReaderTests: [test]
+        NovelReaderUITests: [test]
     run:
       config: Debug
     test:

@@ -14,5 +14,6 @@ toolchain:
 build_test:
   fast_test_plan: Fast
   full_test_plan: Full
+  ui_test_target: NovelReaderUITests
   accessibility_audit: warn
   commit_recorded_snapshots: false
