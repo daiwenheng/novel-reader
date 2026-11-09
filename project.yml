@@ -75,7 +75,9 @@ schemes:
       config: Debug
     test:
       config: Debug
-      targets:
-        - NovelReaderTests
+      testPlans:
+        - path: Fast.xctestplan
+          defaultPlan: true
+        - path: Full.xctestplan
     archive:
       config: Release

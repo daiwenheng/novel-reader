@@ -4,7 +4,7 @@ project: NovelReader.xcodeproj
 scheme: NovelReader
 bundle_id: com.daiwenheng.novelreader
 display_name: 小说阅读
-generate_command: xcodegen generate
+generate_command: xcodegen generate && python3 Scripts/sync-test-plans.py
 
 toolchain:
   xcode: '26.6'
@@ -12,4 +12,7 @@ toolchain:
   ios: '26.4'
 
 build_test:
+  fast_test_plan: Fast
+  full_test_plan: Full
   accessibility_audit: warn
+  commit_recorded_snapshots: false
