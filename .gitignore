@@ -1,0 +1,9 @@
+*.xcodeproj/
+build/
+DerivedData/
+.build/
+.build-test-derived-data/
+.ci-workflows/
+Support/Info.plist
+.DS_Store
+xcuserdata/
