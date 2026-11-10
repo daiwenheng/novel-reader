@@ -19,10 +19,6 @@ targets:
     platform: iOS
     sources:
       - path: NovelReader
-        excludes:
-          - Resources/Assets.xcassets
-    resources:
-      - path: NovelReader/Resources/Assets.xcassets
     dependencies:
       - package: ZIPFoundation
     info:
